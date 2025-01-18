@@ -37,11 +37,11 @@ public class BottomNatigation extends AppCompatActivity {
             return insets;
         });
 
-        //binding  = ActivityBottomNatigationBinding.inflate(getLayoutInflater());
-        //setContentView(binding.getRoot());
+        binding  = ActivityBottomNatigationBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        //binding.bottomnavigationBv;//就可以直接用了
-        bv = findViewById(R.id.bottomnavigation_bv);
+        bv = binding.bottomnavigationBv;//就可以直接用了
+        //bv = findViewById(R.id.bottomnavigation_bv);
         list = new ArrayList<>();
         list.add(new homefragment());
         list.add(new addressbooklfragment());

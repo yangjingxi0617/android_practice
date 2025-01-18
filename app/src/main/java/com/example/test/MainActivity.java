@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //use intent to start a new activity
                 Intent intent = new Intent(MainActivity.this, relativeLayout.class);
                 startActivity(intent);
             }
